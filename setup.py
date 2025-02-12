@@ -4,7 +4,7 @@ from setuptools import find_packages
 
 
 def setup_package():
-    install_requires = ['numpy<2', 'pandas', 'pyBigWig', 'borzoi-pytorch']
+    install_requires = ['numpy<2', 'pandas', 'pyBigWig', 'enformer-pytorch', 'borzoi-pytorch']
     metadata = dict(
         name='borzoi_loader',
         version='0.0.1',
