@@ -16,7 +16,7 @@ This repo builds primarily on the work done in the repo enformer-finetune (https
 ## Generating dataset
 
 ```
-python enformer_loader/scripts/generate_dataset.py \
+python enformer_loader/scripts/generate_dataset_196kb.py \
     chrom_sizes_file[.txt] bigwig_file[.bw] dataset_size[int] out_file[.bed]
 ```
 
