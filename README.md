@@ -2,11 +2,11 @@
 
 This repo is made to preprocess .bigWig data to be used to finetune Borzoi, and to provide Pytorch DataLoader structures to do so.
 
-This git repo is mostly adapted from the `enformer_loader` repo, but using defaults compatible with `borzoi-pytorch` instead of `enformer-pytorch`.
+This git repo is mostly adapted from my `enformer_loader` repo, but using defaults compatible with `borzoi-pytorch` instead of `enformer-pytorch`.
 
 ## Acknowledgements
 
-This repo builds primarily on the work done in the repo enformer-finetune by wconnell (License: Apache 2.0), and predicts using the enformer-pytorch implementation of Enformer by lucidrains (License: MIT).
+This repo builds primarily on the work done in the repo enformer-finetune (https://github.com/wconnell/enformer-finetune, License: Apache 2.0, wconnell), and predicts using the borzoi-pytorch implementation of Borzoi (https://github.com/johahi/borzoi-pytorch, License: Apache 2.0, johani). Other functions taken from enformer-pytorch (https://github.com/lucidrains/enformer-pytorch/tree/main, License: MIT, lucidrains).
 
 ## Installation
 
@@ -16,7 +16,7 @@ This repo builds primarily on the work done in the repo enformer-finetune by wco
 ## Generating dataset
 
 ```
-python enformer_loader/scripts/generate_dataset.py \
+python borzoi_loader/scripts/generate_dataset_196kb.py \
     chrom_sizes_file[.txt] bigwig_file[.bw] dataset_size[int] out_file[.bed]
 ```
 
